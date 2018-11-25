@@ -2,6 +2,10 @@ footer {
     background-color: $brown;
     color: $lightGrey;
     font-size: 1.3rem;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
 
     .container {
         justify-content: space-between;
@@ -20,7 +24,7 @@ footer {
         }
 
         div {
-            width: 30%;
+            width: 360px;
         }
 
         .footer-content {

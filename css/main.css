@@ -124,12 +124,12 @@ header {
   display: block;
   padding: 0.7em 0;
   font-size: 1.2rem;
-  transition: all 300ms ease; }
+  transition: all 300ms ease;
+  border: 1px solid #EF9179; }
 
 a.btn:hover {
   color: #EF9179;
-  background-color: #fff;
-  border: 1px solid #EF9179; }
+  background-color: #fff; }
 
 .content {
   font-size: 1.4rem;
@@ -163,14 +163,21 @@ a.btn:hover {
   .menu .container .menu-gallery {
     grid-template-columns: 1fr; } }
 .contact-section {
-  background-color: #C6F4ED; }
+  background-color: #C6F4ED;
+  margin-bottom: 330px; }
   .contact-section .container .contact-header {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto 4rem; }
-    .contact-section .container .contact-header img {
+    .contact-section .container .contact-header #question-mark {
       width: 300px;
       height: 300px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      background-image: url(../images/questionMark.jpeg);
+      background-size: cover;
+      background-position: center center; }
   .contact-section .container .row {
     justify-content: space-around;
     width: 100%;
@@ -197,18 +204,24 @@ a.btn:hover {
         height: 150px; }
 
 @media screen and (max-width: 768px) {
-  .contact-section .container .row #map {
-    width: 90%; }
-  .contact-section .container .row form {
-    width: 90%;
-    height: auto;
-    margin-top: 4rem; }
-    .contact-section .container .row form input, .contact-section .container .row form textarea {
-      margin-bottom: 2rem; } }
+  .contact-section {
+    margin-bottom: 370px; }
+    .contact-section .container .row #map {
+      width: 90%; }
+    .contact-section .container .row form {
+      width: 90%;
+      height: auto;
+      margin-top: 4rem; }
+      .contact-section .container .row form input, .contact-section .container .row form textarea {
+        margin-bottom: 2rem; } }
 footer {
   background-color: #774f38;
   color: #FFFEFA;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  width: 100%; }
   footer .container {
     justify-content: space-between; }
     footer .container ul {
@@ -219,7 +232,7 @@ footer {
       footer .container a:hover {
         color: #EF9179; }
     footer .container div {
-      width: 30%; }
+      width: 360px; }
     footer .container .footer-content {
       height: 100%;
       display: flex;

@@ -1,6 +1,5 @@
 .contact-section {
     background-color: $blue;
-    margin-bottom: 330px;
     
     .container {
         .contact-header {
@@ -61,7 +60,6 @@
 
 @media screen and (max-width: 768px){
     .contact-section{
-        margin-bottom: 370px;
         .container{
             .row{
                 #map{

@@ -19,6 +19,13 @@ body, html{
     overflow-x: hidden;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     color: $darkGrey;
+    position: relative;
+    z-index: 0;
+}
+
+main{
+    position: relative;
+    z-index: 1;
 }
 
 ul{

@@ -1,55 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import 'partials/variables';
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "partials/variables";
 
 /*****************
     LAYOUT
 *****************/
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body, html{
-    width: 100%;
-    height: 100%;
-    font-size: 12px;
-    // overflow-x: hidden;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    color: $darkGrey;
-    position: relative;
-    z-index: 0;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  // overflow-x: hidden;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: $darkGrey;
+  position: relative;
+  z-index: 0;
 }
 
-main{
-    position: relative;
-    z-index: 1;
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-h1 { font-size: 6rem; font-weight: 100; }
-h2 { font-size: 4rem; font-weight: 100; }
-h3 { font-size: 3.5rem; font-weight: 100; }
-h4 { font-size: 2rem; font-weight: 100; }
-
-
-a{
-    text-decoration: none;
+h1 {
+  font-size: 6rem;
+  font-weight: 100;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+h3 {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 100;
 }
 
+a {
+  text-decoration: none;
+}
 
-
-
-@import 'partials/nav';
-@import 'partials/header';
-@import 'partials/utility';
-@import 'partials/menu';
-@import 'partials/contact';
-@import 'partials/footer';
-
-
+@import "partials/nav";
+@import "partials/header";
+@import "partials/utility";
+@import "partials/menu";
+@import "partials/blog";
+@import "partials/contact";
+@import "partials/footer";

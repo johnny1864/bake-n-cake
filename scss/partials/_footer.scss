@@ -1,121 +1,147 @@
 footer {
-    background-color: $brown;
-    color: $lightGrey;
-    font-size: 1.3rem;
-    position: relative;
-    z-index: -2;
-    width: 100%;
-    height: 300px;
+  background-color: $brown;
+  color: $lightGrey;
+  font-size: 1.3rem;
+  position: relative;
+  z-index: -2;
+  width: 100%;
+  height: 300px;
 
-    .container {
-        .footer-reveal {
-            justify-content: space-between;
-            position: fixed;
-            bottom: 0;
-            z-index: -1;
-            width: 100%;
-        }
+  .container {
+    padding: 0;
+    .footer-reveal {
+      justify-content: space-between;
+      position: fixed;
+      bottom: 4rem;
+      z-index: -1;
+      width: 100%;
+      padding-top: 7rem;
+    }
 
-        ul {
-            display: flex;
-            width: 100%;
-        }
+    ul {
+      display: flex;
+      width: 100%;
+    }
 
-        a {
-            color: $lightGrey;
+    a {
+      color: $lightGrey;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+
+    div {
+      width: 360px;
+    }
+
+    .footer-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+
+      p {
+        padding-top: 1rem;
+        margin-left: 15px;
+      }
+
+      ul {
+        margin-left: 15px;
+      }
+
+      li {
+        padding: 3em 3em 0 0;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      ul {
+        width: 75%;
+        justify-content: space-between;
+
+        li {
+          a {
+            display: block;
+            background: url(../images/social-media-icons.png) no-repeat;
+            width: 40px;
+            height: 40px;
+            transition: all 300ms ease;
 
             &:hover {
-                color: $orange;
+              transform: scale(1.1);
             }
+          }
+
+          a.facebook {
+            background: url(../images/social-media-icons.png) no-repeat -205px -34px;
+            width: 70px;
+            height: 45px;
+          }
         }
+      }
 
-        div {
-            width: 360px;
-        }
-
-        .footer-content {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-
-            .logo {
-                width: 100px;
-                height: 100px;
-            }
-
-            p {
-                padding-top: 1rem;
-                margin-left: 15px;
-            }
-
-            ul {
-                margin-left: 15px;
-            }
-
-            li {
-                padding: 3em 3em 0 0;
-            }
-        }
-
-        .social-links {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-
-            ul {
-                width: 50%;
-                justify-content: space-between;
-            }
-
-            p {
-                position: absolute;
-                bottom: 0;
-            }
-
-            a {
-                font-size: 2rem;
-            }
-
-        }
+      p {
+        position: absolute;
+        bottom: 0;
+      }
     }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    .footer-reveal {
+      width: 1000px !important;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    footer {
-        height: 340px;
+  footer {
+    height: 340px;
 
-        .container {
-            div {
-                width: 80%;
-            }
+    .container {
+      div {
+        width: 80%;
+      }
 
-            .footer-content {
-                height: 50%;
+      .footer-content {
+        height: 50%;
 
-                p {
-                    margin-left: 0;
-                }
-
-                ul {
-                    margin-left: 0;
-                }
-
-                li {
-                    padding: 2rem 3rem 1rem 0;
-                }
-            }
-
-            .social-links {
-                ul {
-                    padding: 1rem 0;
-                }
-
-                p {
-                    position: static;
-                }
-            }
+        p {
+          margin-left: 0;
         }
+
+        ul {
+          margin-left: 0;
+        }
+
+        li {
+          padding: 2rem 3rem 1rem 0;
+        }
+      }
+
+      .social-links {
+        ul {
+          padding: 1rem 0 2rem;
+          width: 280px;
+        }
+
+        p {
+          position: static;
+        }
+      }
     }
+  }
 }

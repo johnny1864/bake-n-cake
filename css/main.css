@@ -146,8 +146,8 @@ header {
     justify-content: space-around;
     margin-top: 5rem; }
     header .showcase img {
-      width: 50%;
-      height: 20%;
+      width: 540px;
+      height: 270px;
       padding-top: 10px; }
     header .showcase div {
       width: 40%; }
@@ -160,7 +160,8 @@ header {
   .container .showcase {
     margin-top: 3rem; }
     .container .showcase img, .container .showcase div {
-      width: 90%; }
+      width: 90%;
+      height: auto; }
     .container .showcase div {
       text-align: center;
       padding-top: 1rem; } }

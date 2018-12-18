@@ -1,0 +1,20 @@
+#about-page section > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem; }
+  #about-page section > div h2 {
+    padding: 0 0 2rem;
+    line-height: 1em; }
+  #about-page section > div .content {
+    font-size: 1.6rem;
+    line-height: 2.3rem; }
+  #about-page section > div figure img {
+    width: 400px; }
+
+@media screen and (max-width: 768px) {
+  #about-page {
+    text-align: center; }
+    #about-page section > div {
+      grid-template-columns: 1fr; } }
+
+/*# sourceMappingURL=about.css.map */

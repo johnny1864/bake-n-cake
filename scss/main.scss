@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "partials/variables";
+@import "partials/utility";
 
 /*****************
     LAYOUT
@@ -56,8 +57,9 @@ a {
 
 @import "partials/nav";
 @import "partials/header";
-@import "partials/utility";
+
 @import "partials/menu";
 @import "partials/blog";
 @import "partials/contact";
 @import "partials/footer";
+@import "partials/about";

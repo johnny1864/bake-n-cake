@@ -77,7 +77,8 @@ html {
 main {
   position: relative;
   z-index: 1;
-  max-width: 1600px; }
+  max-width: 1600px;
+  margin: 0 auto; }
 
 ul {
   list-style: none; }

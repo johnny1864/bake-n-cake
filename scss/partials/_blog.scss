@@ -1,0 +1,57 @@
+#blog {
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    h3.blog-title {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 960px) {
+        .container {
+            max-width: 650px;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .blog-card {
+            display: flex;
+
+            margin-bottom: 3rem;
+
+            figure {
+                width: 30%;
+                margin-right: 6rem;
+            }
+
+
+        }
+    }
+}
+
+#blog-template {
+    .container {
+        @media screen and (max-width: 960px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @media screen and (min-width: 960px) {
+            .content {
+                figure {
+                    width: 50%;
+                    float: right;
+                    padding: 0 0 2em 2em;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

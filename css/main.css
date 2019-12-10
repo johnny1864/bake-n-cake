@@ -291,14 +291,23 @@ header .showcase div .btn {
   }
 }
 
+#blog-template .container {
+  padding: 1.5rem;
+}
 #blog-template .container p {
   margin-bottom: 1rem;
   line-height: 1.5;
 }
+#blog-template .container figure {
+  max-width: 100%;
+}
+#blog-template .container figure img {
+  width: 100%;
+}
 @media screen and (max-width: 960px) {
   #blog-template .container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 960px) {

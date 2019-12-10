@@ -25,6 +25,7 @@
 
             figure {
                 width: 30%;
+                min-width: 300px;
                 margin-right: 6rem;
             }
 
@@ -35,6 +36,10 @@
 
 #blog-template {
     .container {
+        p{
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
         @media screen and (max-width: 960px) {
             display: flex;
             flex-direction: column-reverse;
